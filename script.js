@@ -12,7 +12,7 @@ var halt = false
 // Convert the sad NodeList to a happy Array.
 for (var i = 0; i < sad.length; i++) {
   // Filter liked
-  if (!hasClass(sad[i], 'UFILinkBright')) {
+  if (!hasClass(sad[i], 'UFILinkBright') && sad[i].innerHTML.indexOf("Descurtir") == -1) {
     happy.push(sad[i])
   }
 }
